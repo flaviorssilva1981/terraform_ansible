@@ -16,8 +16,15 @@ provider "aws" {
 resource "aws_instance" "app_server" {
   ami           = "ami-08ae71fd7f1449df1"
   instance_type = "t2.micro"
-  key_name = "production-lab"  
+  key_name = "production-lab"
+ /* user_data = <<-EOF
+                 #!/bin/bash
+                 cd /home/ubuntu
+                 echo "<h1>Feito com Terraform</h1>" > index.html
+                 nohup busybox httpd -f -p 8080 &
+                 EOF  
+ */
   tags = {
-    Name = "ExampleAppServerInstance"
+    Name = "Terraform-Ansible-Python"
   }
 }
