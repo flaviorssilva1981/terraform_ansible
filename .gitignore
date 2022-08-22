@@ -9,3 +9,5 @@
 *.pem
 *.pub
 *.hcl
+IaC-PROD
+IaC-DEV
