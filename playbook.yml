@@ -27,6 +27,7 @@
         regexp: 'ALLOWED_HOSTS'
         line: 'ALLOWED_HOSTS = ["*"]'
         backrefs: yes
+        #test
 
 
 
