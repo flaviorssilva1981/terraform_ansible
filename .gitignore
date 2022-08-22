@@ -7,4 +7,4 @@
 *.tfstate.*
 *.ppk
 *.pem
-
+*.pub
